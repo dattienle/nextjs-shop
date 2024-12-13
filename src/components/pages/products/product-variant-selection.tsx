@@ -89,7 +89,7 @@ export default function ProductVariantSelection(props: { product: any }) {
               name: product.fields.name,
               record_id: product.fields.record_id,
             },
-            product_variant: variants.find((v) => v.variants === selectedId),
+            product_variant: variants.find((v:any) => v.variants === selectedId),
             variant_id: selectedId,
             quantity: 1,
           });
